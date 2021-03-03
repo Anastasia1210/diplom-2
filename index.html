@@ -10,11 +10,17 @@
 
 <body>
 
-	<header class="banner">
+<header class="banner">
   <div class="logo-and-menu">
-  <img src="svg/noemi-logo.svg" class="logo" alt="logo of the company">
-  <nav class="menu">
-  <ul class="menu-list">
+	<div class="logo">
+  <img src="svg/noemi-logo.svg" class="logo-img" alt="logo of the company">
+  </div>
+
+	<nav class="menu">
+    <div class="burger">
+      <span class="burger-line"></span>
+   </div>
+	  <ul class="menu-list">
     <li class="menu-list-item">
       <a class="item-link" href="0">главная</a>
     </li>
@@ -37,6 +43,7 @@
     </li>
   </ul>
   </nav>
+
   </div>
   <div class="intro">
   <p class="title">блог о творчестве, спорте, и образе жизни</p>
@@ -44,7 +51,7 @@
 </header>
 
 <section class="in-trend-now">
-	<h3 class="headline1">сейчас в тренде</h3>
+	<h2 class="headline1">сейчас в тренде</h2>
 	<div class="trend-articles">
 		<div class="trend-article">
 			<div class="trends trend1">
@@ -53,7 +60,7 @@
 			<a class="themes" href="0">lifestyle</a>
 			<a class="themes" href="0">interior</a>
 			</div>
-			<h2 class="post-title1"> <a href="0">сейчас в тренде: сад на подоконнике</a></h2>
+			<h3 class="post-title1"> <a href="0">сейчас в тренде: сад на подоконнике</a></h3>
 		  </div>
 		</div>
 		</div>
@@ -63,7 +70,7 @@
 			<div class="themes-list">
 			<a class="themes" href="0">food</a>
 			</div>
-			<h2 class="post-title1"> <a href="0">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
+			<h3 class="post-title1"> <a href="0">сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
 		  </div>
 		</div>
 		</div>
@@ -74,7 +81,7 @@
 			<a class="themes" href="0">lifestyle</a>
 			<a class="themes" href="0">travel</a>
 			</div>
-			<h2 class="post-title1"> <a href="0">собираемся в первый поход в горы</a></h2>
+			<h3 class="post-title1"> <a href="0">собираемся в первый поход в горы</a></h3>
 		  </div>
 		</div>
 		</div>
@@ -289,20 +296,20 @@
 </section>
 
 <section class="shop">
-<h3 class="headline1">наши изделия</h3>
+<h2 class="headline1">наши изделия</h2>
 <div class="our-goods">
 
 	<div class="a-good">
-		<div class="good-picture">
-			<picture>
-			<source media="(min-width: 361px)" srcset="images/shop-item-mobile1.jpg">
-			<source media="(min-width: 641px)" srcset="images/shop-item-tablet1.jpg">
-			<source media="(min-width: 1201px)" srcset="images/shop-item-desk1.jpg">
-			<img class="goods__img" src="images/shop-item-desk1.jpg" alt="pillows for sofa">
+		<div>
+			<picture class="good-picture">
+			<source media="(min-width: 360px) and (max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+			<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+			<source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+			<img src="images/shop-item-desk1.jpg" alt="pillows for sofa">
 			</picture>
 		</div>
 			<div class="good-description">
-				<h2 class="post-title">подушки на диван</h2>
+				<h3 class="post-title">подушки на диван</h3>
 				<div class="short-text1">
 				<p class="short-text1"> Набор из двух подушек с модными принтами. Видео о создании <a class="here" href="#0"> здесь</a>.</p>
 </div>
@@ -311,47 +318,51 @@
 					<span class="before">1000&#8381;</span>
 					<span class="now">800&#8381;</span>
 					</div>
-					<button class="button-shop" type="button"> <span class="signup">в магазин</span></button>
+          <div class="go-shop">
+					<a href="0"><span class="signup">в магазин</span></a>
+        </div>
 				</div>
 			</div>
 		</div>
 
 		<div class="a-good">
-			<div class="good-picture">
-				<picture>
-				<source media="(min-width: 361px)" srcset="images/shop-item-mobile2.jpg">
-				<source media="(min-width: 641px)" srcset="images/shop-item-tablet2.jpg">
-				<source media="(min-width: 1201px)" srcset="images/shop-item-desk2.jpg">
-				<img class="goods__img" src="images/shop-item-desk2.jpg" alt="doll rabbit">
+			<div>
+				<picture class="good-picture">
+				<source media="(min-width: 360px) and (max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+				<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+				<source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+				<img src="images/shop-item-desk2.jpg" alt="doll rabbit">
 				</picture>
 			</div>
 
 				<div class="good-description">
-					<h2 class="post-title">кукла "зайчик"</h2>
+					<h3 class="post-title">кукла "зайчик"</h3>
 					<div class="short-text1">
 					<p> Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="here" href="#0"> весенняя серия постов</a> в блоге и несколько подкатов.</p>
 </div>
 				<div class="price-and-button">
-						<div class="price">
+						<div class="price-now">
 						<span class="now">3500&#8381;</span>
 						</div>
-						<button class="button-shop" type="button"> <span class="signup">в магазин</span></button>
+            <div class="go-shop">
+						<a href="0"><span class="signup">в магазин</span></a>
+          </div>
 					</div>
 				</div>
 			</div>
 
 			<div class="a-good">
-				<div class="good-picture">
-					<picture>
-					<source media="(min-width: 361px)" srcset="images/shop-item-mobile3.jpg">
-					<source media="(min-width: 641px)" srcset="images/shop-item-tablet3.jpg">
-					<source media="(min-width: 1201px)" srcset="images/shop-item-desk3.jpg">
-					<img class="goods__img" src="images/shop-item-desk3.jpg" alt="frame and vase">
+				<div>
+					<picture class="good-picture">
+					<source media="(min-width: 360px) and (max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+					<source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+					<source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+					<img src="images/shop-item-desk3.jpg" alt="frame and vase">
 					</picture>
 				</div>
 
 					<div class="good-description">
-						<h2 class="post-title">шестиугольная рамка</h2>
+						<h3 class="post-title">шестиугольная рамка</h3>
 						<div class="short-text1">
 						<p> Необычная рамка для украшения дома из видео <a class="here" href="#0"> "Как сделать рамку из подручных средств за 30 секунд"</a></p>
 					</div>
@@ -360,7 +371,9 @@
 							<span class="before">500&#8381;</span>
 							<span class="now">400&#8381;</span>
 							</div>
-							<button class="button-shop" type="button"> <span class="signup">в магазин</span></button>
+              <div class="go-shop">
+							<a href="0"><span class="signup">в магазин</span></a>
+            </div>
 						</div>
 					</div>
 				</div>
@@ -393,9 +406,44 @@
 		<div class="copyright"><a href="0" class="copyright-link">Copyright © 2009–2019 City Blog LLC.</a></div>
 	</footer>
 
+<div class="popup-wrapper">
+
+  <div class="popup">
+    <button class="popup__close" type="button"><span class="close">Закрыть окно</span></button>
+    <div class="popup-form">
+    <h2 class="headline1">ваш фидбек</h2>
+<div class="form-group">
+    <label class="select-group">
+        <span class="question">Как часто вы заходите на сайт?</span>
+        <div class="insert">
+        <select class="select">
+          <option value="moscow" selected>Почти каждый день</option>
+          <option value="st-petersburg">Не могу выйти, чтобы зайти снова</option>
+          <option value="kazan">Следующий ответ</option>
+        </select>
+      </div>
+      </label>
+    </div>
+    <div class="form-group">
+        <span class="question">Вы подписаны на e-mail рассылку?</span>
+        <div class="insert">
+         <label><input class="circle" type="radio" name="time" value="yes" checked>Да</label>
+         <label><input class="circle" type="radio" name="time" value="no">Нет</label>
+       </div>
+    </div>
+    <div class="form-group">
+        <label class="field-group">
+          <span class="question">Расскажите, какой контент Вы хотели бы видеть на нашем сайте?</span>
+          <div class="insert">
+            <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+          </div>
+        </label>
+   </div>
+   <button type="submit" name="submit_button" class=="button-submit"><span class="signup">Отправить</span></button>
+ </div>
+  </div>
+</div>
 
 </body>
-
-
 
 </html>
