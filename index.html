@@ -101,7 +101,6 @@
 
 <div class="body">
 
-<section class="posts-and-side-bar">
 	<main class="posts">
     <div class="post">
       <img src="images/last-post1.jpg" class="post-preview" alt="walking-on-water man">
@@ -293,7 +292,7 @@
     </div>
     </section>
 	</aside>
-</section>
+</div>
 
 <section class="shop">
 <h2 class="headline1">наши изделия</h2>
@@ -318,9 +317,9 @@
 					<span class="before">1000&#8381;</span>
 					<span class="now">800&#8381;</span>
 					</div>
-          <div class="go-shop">
-					<a href="0"><span class="signup">в магазин</span></a>
-        </div>
+
+					<a href="0" class="go-shop">в магазин</a>
+
 				</div>
 			</div>
 		</div>
@@ -344,9 +343,9 @@
 						<div class="price-now">
 						<span class="now">3500&#8381;</span>
 						</div>
-            <div class="go-shop">
-						<a href="0"><span class="signup">в магазин</span></a>
-          </div>
+
+						<a href="0" class="go-shop">в магазин</a>
+
 					</div>
 				</div>
 			</div>
@@ -371,15 +370,14 @@
 							<span class="before">500&#8381;</span>
 							<span class="now">400&#8381;</span>
 							</div>
-              <div class="go-shop">
-							<a href="0"><span class="signup">в магазин</span></a>
-            </div>
+
+						  <a href="0" class="go-shop">в магазин</a>
+            
 						</div>
 					</div>
 				</div>
 
 				</div>
-</div>
 </section>
 
 	<footer>
@@ -425,21 +423,29 @@
       </label>
     </div>
     <div class="form-group">
-        <span class="question">Вы подписаны на e-mail рассылку?</span>
-        <div class="insert">
-         <label><input class="circle" type="radio" name="time" value="yes" checked>Да</label>
-         <label><input class="circle" type="radio" name="time" value="no">Нет</label>
-       </div>
+      <span class="question">Вы подписаны на e-mail рассылку?</span>
+      <div class="yes-no">
+        <label>
+          <input class="checkbox" type="radio" name="time" value="yes" checked>
+          <span class="checkbox-text">Да</span>
+          </label>
+        <label>
+          <input class="checkbox" type="radio" name="time" value="no">
+          <span class="checkbox-text">Нет</span>
+        </label>
+     </div>
     </div>
-    <div class="form-group">
+      <div class="form-group">
         <label class="field-group">
           <span class="question">Расскажите, какой контент Вы хотели бы видеть на нашем сайте?</span>
           <div class="insert">
-            <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+            <textarea class="field-textarea" placeholder="Может, больше рецептов?"></textarea>
           </div>
         </label>
    </div>
-   <button type="submit" name="submit_button" class=="button-submit"><span class="signup">Отправить</span></button>
+   <div class="button-container">
+   <button type="submit" name="submit_button" class="button-submit"><span class="signup">Отправить</span></button>
+ </div>
  </div>
   </div>
 </div>
