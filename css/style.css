@@ -811,7 +811,7 @@ margin-top: 7px;
   top: 7px;
 }
 .menu-list {
-  visibility: hidden;
+  display: none;
 }
 .logo {
    width: 100%;
@@ -1552,5 +1552,16 @@ margin-left: auto;
  footer {
  margin: 45px 15px;
  width: calc(100% - 30px);
+ }
+}
+@media (max-height: 641px) and (orientation: landscape) {
+.trend-article {
+  width: calc(50% - 1.5px)
+ }
+.trend-article:nth-child(n+2) {
+ margin-left: 0;
+ }
+ .trend-article:nth-child(2n) {
+ margin-left: 3px;
  }
 }
